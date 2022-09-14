@@ -1,0 +1,13 @@
+<canvas id="myCanvas" width="200" height="200" style="border: 1px solid #c3c3c3;">
+    Your browser does not support the canvas element.
+</canvas>
+
+<script>
+    var canvas=document.getElementById("myCanvas");
+    var ctx=canvas.getContext("2d");
+    
+    ctx.font = "30px Comic Sans MS";
+    ctx.fillStyle = "red";
+    ctx.textAlign = "center";
+    ctx.strokeText( "Hello World", canvas/width/2,canvas/heigth/2, 50 );
+</script>

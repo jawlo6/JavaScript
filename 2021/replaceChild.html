@@ -1,0 +1,14 @@
+<html>
+<div id="div1">
+    <p id='p1'>Akapit pierwszy</p>
+    <p id='p2'>Akapit drugi</p>
+</div>
+<script>
+    var parent=document.getElementById("div1");
+    var child=document.getElementById('p1');
+    var akapit=document.createElement("p");
+    var node=document.createTextNode("nowy akapit");
+    akapit.appendChild( node );
+    parent.replaceChild( akapit, child );
+</script>
+</html>
